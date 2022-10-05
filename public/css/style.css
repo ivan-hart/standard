@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('../images/header_bg.svg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 40em;
+    border-bottom: 2px solid #000;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #34343466;
+    padding-block: 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+nav a {
+    margin-left: 50px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 500px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3em;
+}
+header .container {
+    width: 100%;
+    max-width: 600px;
+    color: #fff;
+    font-size: 2em;
+}
+.text-center {
+    text-align: center;
+}
+main:nth-child(1) {
+    background-color: #EEF7FF;
+}
+header hr {
+    margin-block: 1.3em;
+}
+#dropdown-button, #dropdown-items {
+    color: #fff;
+    display: none;
+}
+#dropdown-button {
+    width: 100%;
+    max-width: 50px;
+}
+#dropdown-items {
+    position: absolute;
+    margin-right: 10px;
+    background-color: #f9f9f9;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 610px) {
+    header {
+        min-height: 20em;
+    }
+    header .container {
+        max-width: 300px;
+        font-size: 1.3em;
+    }
+    nav {
+        padding: 10px;
+    }
+    nav a {
+        font-size: 0.9em;
+    }
+    .nav-links {
+        display: none;
+    }
+    #dropdown-button {
+        display: inline-flex;
+        justify-content:right;
+    }
+    #dropdown-button:hover #dropdown-items{
+        display: block;
+    }
+    #dropdown-items a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+}
